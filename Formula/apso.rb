@@ -1,23 +1,23 @@
 class Apso < Formula
   desc "CLI for the Apso backend-as-a-service platform"
   homepage "https://apso.ai"
-  version "0.48.0"
+  version "0.49.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/apsoai/cli/releases/download/v#{version}/apso-v#{version}-darwin-arm64.tar.gz"
-      sha256 "37ee1facde74cfaa77976288b2ce746cb07db0848a57df1aea3675e4e3946b9d"
+      sha256 "ec40eacee2d2387a8fb46f31e320d474827c7ce1ce3e4589f929b88949bae772"
     elsif Hardware::CPU.intel?
       url "https://github.com/apsoai/cli/releases/download/v#{version}/apso-v#{version}-darwin-x64.tar.gz"
-      sha256 "5d0ebbc0f856d417d8883d6b908b714109943cd2154ed8bf5fbdd950c3d492a7"
+      sha256 "a85d4dfc0de324ca3b635e8a47ff2a44d232519fdf76d445338221841c2d1951"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/apsoai/cli/releases/download/v#{version}/apso-v#{version}-linux-x64.tar.gz"
-      sha256 "e90f8f38c7cf4dd5dfb7ccebd62ed72fca5212f1e42e6d7bc5d55b88df849e24"
+      sha256 "51cb49014b5f8f9cc3bee2034af71a5ad2c365881a85d6918400f34cbdc8f606"
     end
   end
 
